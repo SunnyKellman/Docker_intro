@@ -1,0 +1,12 @@
+20. Create a local swarm, the Char virtual machine should be its manager.
+
+https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/
+docker swarm init --advertise-addr $(docker-machine ip Char)
+
+/*Swarm initialized: current node (8daguubbvxx6e5ryhcbcqbtx7) is now a manager.
+
+To add a worker to this swarm, run the following command:
+
+    docker swarm join --token SWMTKN-1-3b6nrjjx8kbjohuxwfirqb929wq1qcs3jrbm6b00p78wh5vjhx-bi7td771l7aohem5sv7lltdwm 192.168.99.100:2377
+
+To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.*/

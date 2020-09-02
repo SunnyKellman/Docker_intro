@@ -1,0 +1,4 @@
+27. Get the real-time logs of one the tasks of the engineering-bay service.
+
+//docker service ps engineering-bay to see all tasks and pick one.
+docker service logs -f $(docker service ps engineering-bay -f "name=engineering-bay.1" -q)

@@ -1,0 +1,13 @@
+Create a virtual machine with docker-machine using the virtualbox driver, and
+named Char.
+
+1. Get Brew: git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
+	Use eval $(~/.linuxbrew/bin/brew shellenv) to start the brew service
+	brew install docker docker-machine
+
+2. https://docs.docker.com/machine/get-started/
+	docker-machine create --driver virtualbox Char
+	docker-machine ls
+
+	Use to restart containers:
+	docker-machine start Char

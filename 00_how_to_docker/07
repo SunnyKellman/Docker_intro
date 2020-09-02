@@ -1,0 +1,5 @@
+Get the internal IP address of the overlord container without starting its shell and
+in one command.
+
+https://linuxconfig.org/how-to-retrieve-docker-container-s-internal-ip-address
+docker inspect -f '{{ .NetworkSettings.IPAddress }}' 'overlord'
